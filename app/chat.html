@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NoTrace Chat</title>
+
+  <style type="text/css">
+
+
+    ul{
+      margin:0;
+      padding:0;
+    }
+
+    li{
+      display: table;
+    }
+
+    .main-container{
+      height:768px;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #000;
+    }
+    #notify-code{
+      color:#0ff;
+      padding:20px;
+    }
+
+    .chat-window-div{
+      width:100%;
+      height:60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #chat-window{
+      width:60%;
+      padding:50px 20px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .his-message{
+      background-color: #333;
+      color:#fff;
+      padding:10px 20px;
+      margin-top: 2%;
+      border-radius:15px 15px 15px 0px;
+    }
+
+    .my-message{
+      background-color:#999;
+      color:#000;
+      padding:10px 20px;
+      margin-top: 2%;
+/*      margin-left: 70%;
+*/      border-radius:15px 15px 0px 15px;
+/*      max-width: 400px;
+*/      
+    }
+  
+
+    .form-elem {
+      padding:10px;
+    }
+
+    #chat-field{
+      font-size: 1em;
+      width:60%;
+      color:#000;
+    }
+
+    #send-button{
+      background-color: #555;
+      font-size:1em;
+      color:white;
+      cursor: pointer;
+      width:20%;
+    }
+
+    .chat-form{
+      width:70%;
+      padding:2%;
+    }
+/*
+    #exit-chat{
+      background-color: #f68;
+      color:#fff;
+      padding:15px 30px;
+      border-radius: 5px;
+      margin-top: 350px;
+      margin-left: 250px;
+
+    }
+
+    #exit-chat:hover{
+      background-color: #f33;
+    }
+*/
+
+  </style>
+  
+  <link rel="stylesheet" href="css/main.css"></style>
+
+  </head>
+  <body>
+    
+  <div class="main-container" > 
+
+    <div id = "notify-code"></div>
+
+    <div class = "chat-window-div">
+    <ul id = "chat-window">
+
+<!--       <li class = "his-message"> </li>
+
+      <li class="my-message"> </li>
+ -->
+    </ul>
+    </div>
+
+  <!--   <form id = "send-message">
+      <input type = "text" placeholder="enter message and press enter to send" id = "message-box"> 
+      <input type = "submit" value = "send" id = "send-message">
+    </form>
+   -->
+    <form class = "chat-form" id ="chat-form">
+
+        <input type = "text" name = "message" class = "form-elem" id = "chat-field"
+         maxlength="512" placeholder="enter message and press enter to send" required> 
+
+        <input type = "submit" value="Send" class = "form-elem" id ="send-button">
+
+    </form>
+ 
+  <a href="index.html" id = "exit-chat"> <button id > Exit </button> </a>
+
+  </div>
+
+
+  </body>
+  <script src="js/chat.js" type="text/javascript"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--       <div id = "his-message-window">
+        <div class = "his-message"> </div>
+      </div>
+
+      <div id = "my-message-window">
+        <div class="my-message"> </div>
+      </div>
+ -->
